@@ -4,7 +4,7 @@ O Projeto Mercury é uma aplicação de webmail desenvolvida em C# utilizando o 
 
 # Principais Recursos
 
-Caixa de Entrada: Visualize e gerencie seus e-mails de forma organizada.
+Caixa de Entrada: Visualize e gerencie seus e-mails de forma organizada. \n
 Caixa de Saída: Acompanhe os e-mails enviados e seu status.
 Lixeira: Recupere ou exclua e-mails da lixeira.
 Segurança: Criptografia de senha para garantir a proteção dos dados do usuário.
