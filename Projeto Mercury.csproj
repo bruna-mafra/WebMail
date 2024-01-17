@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1419B971-B9BE-4216-A765-40FE10CB77AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto_Mercury</RootNamespace>
+    <AssemblyName>Projeto Mercury</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Email.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CaixaDeEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CaixaDeEntrada.Designer.cs">
+      <DependentUpon>F_CaixaDeEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CaixaDeSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CaixaDeSaida.Designer.cs">
+      <DependentUpon>F_CaixaDeSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CriarConta.Designer.cs">
+      <DependentUpon>F_CriarConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Lixeira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Lixeira.Designer.cs">
+      <DependentUpon>F_Lixeira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login.Designer.cs">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Login2.Designer.cs">
+      <DependentUpon>F_Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_NovoEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NovoEmail.Designer.cs">
+      <DependentUpon>F_NovoEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Spam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Spam.Designer.cs">
+      <DependentUpon>F_Spam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TelaInicial.Designer.cs">
+      <DependentUpon>F_TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="HashHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CaixaDeEntrada.resx">
+      <DependentUpon>F_CaixaDeEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CaixaDeSaida.resx">
+      <DependentUpon>F_CaixaDeSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CriarConta.resx">
+      <DependentUpon>F_CriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Lixeira.resx">
+      <DependentUpon>F_Lixeira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login.resx">
+      <DependentUpon>F_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Login2.resx">
+      <DependentUpon>F_Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NovoEmail.resx">
+      <DependentUpon>F_NovoEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Spam.resx">
+      <DependentUpon>F_Spam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TelaInicial.resx">
+      <DependentUpon>F_TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
