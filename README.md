@@ -1,6 +1,6 @@
 # Projeto Mercury - Webmail
 
-O Projeto Mercury é uma aplicação de webmail desenvolvida em C# utilizando o framework .NET. A aplicação oferece uma interface intuitiva e eficiente para gerenciar e-mails, proporcionando uma experiência de usuário simplificada.
+O Projeto Mercury é uma aplicação de webmail desenvolvida em C# utilizando Windows Forms. A aplicação oferece uma interface intuitiva e eficiente para gerenciar e-mails, proporcionando uma experiência de usuário simplificada.
 
 ![Texto Alternativo](ImagensDemonstracao/paginaEntradaMercury.png)
 
@@ -36,6 +36,6 @@ C#: Linguagem de programação principal <br>
 SQL Server: Banco de dados relacional para armazenamento de dados<br>
 WinForms: Interface gráfica para o aplicativo de gerenciamento<br>
 
-A documentação completa pode ser acessada no arquivo Documentação MercuryMail.docx
+A documentação completa pode ser acessada no arquivo "Documentação MercuryMail.docx"
 
 
